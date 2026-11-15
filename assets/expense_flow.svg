@@ -1,0 +1,176 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1710" width="1000" height="1710" role="img" aria-label="Flow chart of the Institute Expense Tracker" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<title>Flow chart of the Institute Expense Tracker</title>
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker><marker id="arrR" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker><marker id="arrA" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#d97706"/></marker></defs>
+<rect width="1000" height="1710" fill="#ffffff"/>
+<rect x="440.0" y="22.0" width="120" height="36" rx="18.0" fill="#334155" stroke="#334155" stroke-width="1.6"/>
+<text x="500" y="44.5" font-size="13" fill="#ffffff" font-weight="normal" text-anchor="middle">Start</text>
+<rect x="350.0" y="83.0" width="300" height="48" rx="8" fill="#f1f5f9" stroke="#64748b" stroke-width="1.6"/>
+<text x="500" y="103.2" font-size="13" fill="#0f172a" font-weight="normal" text-anchor="middle">load_expenses()</text>
+<text x="500" y="119.9" font-size="13" fill="#0f172a" font-weight="normal" text-anchor="middle">open expenses.csv (csv.DictReader)</text>
+<polyline points="500,58.0 500,83.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<polygon points="500,156.0 610.0,196 500,236.0 390.0,196" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.6"/>
+<text x="500" y="200.6" font-size="13" fill="#4c1d95" font-weight="normal" text-anchor="middle">File found?</text>
+<polyline points="500,131.0 500,156.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="350.0" y="269.0" width="300" height="48" rx="8" fill="#f1f5f9" stroke="#64748b" stroke-width="1.6"/>
+<text x="500" y="289.2" font-size="13" fill="#0f172a" font-weight="normal" text-anchor="middle">Read rows with csv.DictReader</text>
+<text x="500" y="305.9" font-size="13" fill="#0f172a" font-weight="normal" text-anchor="middle">skip damaged rows (warning)</text>
+<polyline points="500,236.0 500,269.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="505.56" y="245.0" width="28.88" height="16.799999999999997" fill="#ffffff"/>
+<text x="520" y="258.2" font-size="12" fill="#334155" font-weight="bold" text-anchor="middle">Yes</text>
+<rect x="710.0" y="170.0" width="240" height="52" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+<text x="830" y="192.2" font-size="13" fill="#78350f" font-weight="normal" text-anchor="middle">FileNotFoundError caught:</text>
+<text x="830" y="208.9" font-size="13" fill="#78350f" font-weight="normal" text-anchor="middle">start with an empty list</text>
+<polyline points="610.0,196 710.0,196" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="649.04" y="179.0" width="21.919999999999998" height="16.799999999999997" fill="#ffffff"/>
+<text x="660" y="192.2" font-size="12" fill="#334155" font-weight="bold" text-anchor="middle">No</text>
+<rect x="350.0" y="348.0" width="300" height="44" rx="8" fill="#f1f5f9" stroke="#64748b" stroke-width="1.6"/>
+<text x="500" y="374.6" font-size="13" fill="#0f172a" font-weight="normal" text-anchor="middle">Print: Loaded N saved expense record(s).</text>
+<polyline points="500,317.0 500,348.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<polyline points="830,222.0 830,370 650.0,370" fill="none" stroke="#d97706" stroke-width="1.6" marker-end="url(#arrA)"/>
+<rect x="350.0" y="423.0" width="300" height="44" rx="8" fill="#f1f5f9" stroke="#64748b" stroke-width="1.6"/>
+<text x="500" y="449.6" font-size="13" fill="#0f172a" font-weight="normal" text-anchor="middle">print_menu(): options 1 to 4</text>
+<polyline points="500,392.0 500,423.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<polygon points="364.0,498.0 650.0,498.0 636.0,542.0 350.0,542.0" fill="#dbeafe" stroke="#2563eb" stroke-width="1.6"/>
+<text x="500" y="524.5" font-size="13" fill="#1e3a8a" font-weight="normal" text-anchor="middle">Choose an option (1-4)</text>
+<polyline points="500,467.0 500,498.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<polygon points="500,574.0 600.0,612 500,650.0 400.0,612" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.6"/>
+<text x="500" y="616.5" font-size="13" fill="#4c1d95" font-weight="normal" text-anchor="middle">Choice?</text>
+<polyline points="500,542.0 500,574.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<polyline points="500,650.0 500,676" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polyline points="130,676 870,676" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polyline points="130,676 130,704" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="138.52" y="681.0" width="14.959999999999999" height="16.799999999999997" fill="#ffffff"/>
+<text x="146" y="694.2" font-size="12" fill="#334155" font-weight="bold" text-anchor="middle">1</text>
+<rect x="48.0" y="704.0" width="164" height="64" rx="8" fill="#f1f5f9" stroke="#64748b" stroke-width="1.6"/>
+<text x="130" y="732.2" font-size="13" fill="#0f172a" font-weight="normal" text-anchor="middle">add_expense()</text>
+<text x="130" y="748.9" font-size="13" fill="#0f172a" font-weight="normal" text-anchor="middle">details below</text>
+<polyline points="315,676 315,704" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="323.52" y="681.0" width="14.959999999999999" height="16.799999999999997" fill="#ffffff"/>
+<text x="331" y="694.2" font-size="12" fill="#334155" font-weight="bold" text-anchor="middle">2</text>
+<rect x="233.0" y="704.0" width="164" height="64" rx="8" fill="#f1f5f9" stroke="#64748b" stroke-width="1.6"/>
+<text x="315" y="732.2" font-size="13" fill="#0f172a" font-weight="normal" text-anchor="middle">show_expenses()</text>
+<text x="315" y="748.9" font-size="13" fill="#0f172a" font-weight="normal" text-anchor="middle">print the table</text>
+<polyline points="500,676 500,704" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="508.52" y="681.0" width="14.959999999999999" height="16.799999999999997" fill="#ffffff"/>
+<text x="516" y="694.2" font-size="12" fill="#334155" font-weight="bold" text-anchor="middle">3</text>
+<rect x="418.0" y="704.0" width="164" height="64" rx="8" fill="#f1f5f9" stroke="#64748b" stroke-width="1.6"/>
+<text x="500" y="732.2" font-size="13" fill="#0f172a" font-weight="normal" text-anchor="middle">show_totals()</text>
+<text x="500" y="748.9" font-size="13" fill="#0f172a" font-weight="normal" text-anchor="middle">set + sum per category</text>
+<polyline points="685,676 685,704" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="679.6" y="681.0" width="42.8" height="16.799999999999997" fill="#ffffff"/>
+<text x="701" y="694.2" font-size="12" fill="#334155" font-weight="bold" text-anchor="middle">other</text>
+<rect x="603.0" y="704.0" width="164" height="64" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+<text x="685" y="732.2" font-size="13" fill="#7f1d1d" font-weight="normal" text-anchor="middle">Print: Invalid choice.</text>
+<text x="685" y="748.9" font-size="13" fill="#7f1d1d" font-weight="normal" text-anchor="middle">ask again</text>
+<polyline points="870,676 870,704" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="878.52" y="681.0" width="14.959999999999999" height="16.799999999999997" fill="#ffffff"/>
+<text x="886" y="694.2" font-size="12" fill="#334155" font-weight="bold" text-anchor="middle">4</text>
+<rect x="788.0" y="704.0" width="164" height="64" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="1.6"/>
+<text x="870" y="732.2" font-size="13" fill="#14532d" font-weight="normal" text-anchor="middle">Print: Goodbye!</text>
+<text x="870" y="748.9" font-size="13" fill="#14532d" font-weight="normal" text-anchor="middle">leave the loop</text>
+<polyline points="130,768 130,800" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polyline points="315,768 315,800" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polyline points="500,768 500,800" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polyline points="685,768 685,800" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polyline points="685,800 20,800 20,445 350.0,445" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="347.32" y="781.0" width="119.35999999999999" height="16.799999999999997" fill="#ffffff"/>
+<text x="407" y="794.2" font-size="12" fill="#334155" font-weight="bold" text-anchor="middle">back to the menu</text>
+<polyline points="870,768 870,818" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="810.0" y="818.0" width="120" height="36" rx="18.0" fill="#334155" stroke="#334155" stroke-width="1.6"/>
+<text x="870" y="840.5" font-size="13" fill="#ffffff" font-weight="normal" text-anchor="middle">End</text>
+<line x1="40" y1="880" x2="960" y2="880" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="40" y="910.2" font-size="15" fill="#0f172a" font-weight="bold" text-anchor="start">Option 1: add_expense()</text>
+<text x="40" y="930.2" font-size="12" fill="#64748b" font-weight="normal" text-anchor="start">Each input is asked again until it is valid.</text>
+<text x="40" y="971.2" font-size="12" fill="#64748b" font-weight="normal" text-anchor="start" font-family="Consolas, Menlo, DejaVu Sans Mono, monospace">read_date()</text>
+<polygon points="194.0,950.0 480.0,950.0 466.0,984.0 180.0,984.0" fill="#dbeafe" stroke="#2563eb" stroke-width="1.6"/>
+<text x="330" y="971.5" font-size="13" fill="#1e3a8a" font-weight="normal" text-anchor="middle">Enter date (e.g. 2026-11-14)</text>
+<polygon points="330,1002.0 440.0,1032 330,1062.0 220.0,1032" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.6"/>
+<text x="330" y="1036.5" font-size="13" fill="#4c1d95" font-weight="normal" text-anchor="middle">Valid YYYY-MM-DD?</text>
+<polyline points="330,984.0 330,1002.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="535.0" y="1008.0" width="230" height="48" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+<text x="650" y="1028.2" font-size="13" fill="#7f1d1d" font-weight="normal" text-anchor="middle">Invalid date message,</text>
+<text x="650" y="1044.9" font-size="13" fill="#7f1d1d" font-weight="normal" text-anchor="middle">ask again</text>
+<polyline points="440.0,1032 535.0,1032" fill="none" stroke="#dc2626" stroke-width="1.6" marker-end="url(#arrR)"/>
+<rect x="476.04" y="1015.0" width="21.919999999999998" height="16.799999999999997" fill="#ffffff"/>
+<text x="487" y="1028.2" font-size="12" fill="#7f1d1d" font-weight="bold" text-anchor="middle">No</text>
+<polyline points="650,1008.0 650,967 473.0,967" fill="none" stroke="#dc2626" stroke-width="1.6" marker-end="url(#arrR)"/>
+<text x="40" y="1101.2" font-size="12" fill="#64748b" font-weight="normal" text-anchor="start" font-family="Consolas, Menlo, DejaVu Sans Mono, monospace">read_text()</text>
+<polygon points="194.0,1080.0 480.0,1080.0 466.0,1114.0 180.0,1114.0" fill="#dbeafe" stroke="#2563eb" stroke-width="1.6"/>
+<text x="330" y="1101.5" font-size="13" fill="#1e3a8a" font-weight="normal" text-anchor="middle">Enter item name</text>
+<polyline points="330,1062.0 330,1080.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="337.56" y="1062.0" width="28.88" height="16.799999999999997" fill="#ffffff"/>
+<text x="352" y="1075.2" font-size="12" fill="#334155" font-weight="bold" text-anchor="middle">Yes</text>
+<polygon points="330,1132.0 440.0,1162 330,1192.0 220.0,1162" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.6"/>
+<text x="330" y="1166.5" font-size="13" fill="#4c1d95" font-weight="normal" text-anchor="middle">Not empty?</text>
+<polyline points="330,1114.0 330,1132.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="535.0" y="1138.0" width="230" height="48" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+<text x="650" y="1158.2" font-size="13" fill="#7f1d1d" font-weight="normal" text-anchor="middle">Item name cannot be empty,</text>
+<text x="650" y="1174.9" font-size="13" fill="#7f1d1d" font-weight="normal" text-anchor="middle">ask again</text>
+<polyline points="440.0,1162 535.0,1162" fill="none" stroke="#dc2626" stroke-width="1.6" marker-end="url(#arrR)"/>
+<rect x="476.04" y="1145.0" width="21.919999999999998" height="16.799999999999997" fill="#ffffff"/>
+<text x="487" y="1158.2" font-size="12" fill="#7f1d1d" font-weight="bold" text-anchor="middle">No</text>
+<polyline points="650,1138.0 650,1097 473.0,1097" fill="none" stroke="#dc2626" stroke-width="1.6" marker-end="url(#arrR)"/>
+<text x="40" y="1231.2" font-size="12" fill="#64748b" font-weight="normal" text-anchor="start" font-family="Consolas, Menlo, DejaVu Sans Mono, monospace">read_text()</text>
+<polygon points="194.0,1210.0 480.0,1210.0 466.0,1244.0 180.0,1244.0" fill="#dbeafe" stroke="#2563eb" stroke-width="1.6"/>
+<text x="330" y="1231.5" font-size="13" fill="#1e3a8a" font-weight="normal" text-anchor="middle">Enter category (e.g. Stationery)</text>
+<polyline points="330,1192.0 330,1210.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="337.56" y="1192.0" width="28.88" height="16.799999999999997" fill="#ffffff"/>
+<text x="352" y="1205.2" font-size="12" fill="#334155" font-weight="bold" text-anchor="middle">Yes</text>
+<polygon points="330,1262.0 440.0,1292 330,1322.0 220.0,1292" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.6"/>
+<text x="330" y="1296.5" font-size="13" fill="#4c1d95" font-weight="normal" text-anchor="middle">Not empty?</text>
+<polyline points="330,1244.0 330,1262.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="535.0" y="1268.0" width="230" height="48" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+<text x="650" y="1288.2" font-size="13" fill="#7f1d1d" font-weight="normal" text-anchor="middle">Category cannot be empty,</text>
+<text x="650" y="1304.9" font-size="13" fill="#7f1d1d" font-weight="normal" text-anchor="middle">ask again</text>
+<polyline points="440.0,1292 535.0,1292" fill="none" stroke="#dc2626" stroke-width="1.6" marker-end="url(#arrR)"/>
+<rect x="476.04" y="1275.0" width="21.919999999999998" height="16.799999999999997" fill="#ffffff"/>
+<text x="487" y="1288.2" font-size="12" fill="#7f1d1d" font-weight="bold" text-anchor="middle">No</text>
+<polyline points="650,1268.0 650,1227 473.0,1227" fill="none" stroke="#dc2626" stroke-width="1.6" marker-end="url(#arrR)"/>
+<text x="40" y="1361.2" font-size="12" fill="#64748b" font-weight="normal" text-anchor="start" font-family="Consolas, Menlo, DejaVu Sans Mono, monospace">read_amount()</text>
+<polygon points="194.0,1340.0 480.0,1340.0 466.0,1374.0 180.0,1374.0" fill="#dbeafe" stroke="#2563eb" stroke-width="1.6"/>
+<text x="330" y="1361.5" font-size="13" fill="#1e3a8a" font-weight="normal" text-anchor="middle">Enter amount</text>
+<polyline points="330,1322.0 330,1340.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="337.56" y="1322.0" width="28.88" height="16.799999999999997" fill="#ffffff"/>
+<text x="352" y="1335.2" font-size="12" fill="#334155" font-weight="bold" text-anchor="middle">Yes</text>
+<polygon points="330,1392.0 440.0,1422 330,1452.0 220.0,1422" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.6"/>
+<text x="330" y="1426.5" font-size="13" fill="#4c1d95" font-weight="normal" text-anchor="middle">Number and &gt;= 0?</text>
+<polyline points="330,1374.0 330,1392.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="535.0" y="1398.0" width="230" height="48" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+<text x="650" y="1418.2" font-size="13" fill="#7f1d1d" font-weight="normal" text-anchor="middle">Invalid or negative amount</text>
+<text x="650" y="1434.9" font-size="13" fill="#7f1d1d" font-weight="normal" text-anchor="middle">message, ask again</text>
+<polyline points="440.0,1422 535.0,1422" fill="none" stroke="#dc2626" stroke-width="1.6" marker-end="url(#arrR)"/>
+<rect x="476.04" y="1405.0" width="21.919999999999998" height="16.799999999999997" fill="#ffffff"/>
+<text x="487" y="1418.2" font-size="12" fill="#7f1d1d" font-weight="bold" text-anchor="middle">No</text>
+<polyline points="650,1398.0 650,1357 473.0,1357" fill="none" stroke="#dc2626" stroke-width="1.6" marker-end="url(#arrR)"/>
+<rect x="160.0" y="1470.0" width="340" height="48" rx="8" fill="#f1f5f9" stroke="#64748b" stroke-width="1.6"/>
+<text x="330" y="1490.2" font-size="13" fill="#0f172a" font-weight="normal" text-anchor="middle">Append to the list, then</text>
+<text x="330" y="1506.9" font-size="13" fill="#0f172a" font-weight="normal" text-anchor="middle">save_expenses() rewrites expenses.csv</text>
+<polyline points="330,1452.0 330,1470.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="337.56" y="1452.0" width="28.88" height="16.799999999999997" fill="#ffffff"/>
+<text x="352" y="1465.2" font-size="12" fill="#334155" font-weight="bold" text-anchor="middle">Yes</text>
+<rect x="535.0" y="1470.0" width="230" height="48" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+<text x="650" y="1490.2" font-size="13" fill="#78350f" font-weight="normal" text-anchor="middle">If saving fails (OSError):</text>
+<text x="650" y="1506.9" font-size="13" fill="#78350f" font-weight="normal" text-anchor="middle">message shown, record removed</text>
+<polyline points="500.0,1494 535.0,1494" fill="none" stroke="#d97706" stroke-width="1.6" marker-end="url(#arrA)"/>
+<rect x="160.0" y="1538.0" width="340" height="44" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="1.6"/>
+<text x="330" y="1564.5" font-size="13" fill="#14532d" font-weight="normal" text-anchor="middle">Print: Expense saved successfully.</text>
+<polyline points="330,1518.0 330,1538.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="250.0" y="1600.0" width="160" height="36" rx="18.0" fill="#334155" stroke="#334155" stroke-width="1.6"/>
+<text x="330" y="1622.5" font-size="13" fill="#ffffff" font-weight="normal" text-anchor="middle">Back to menu</text>
+<polyline points="330,1582.0 330,1600.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<polyline points="650,1518.0 650,1618 410.0,1618" fill="none" stroke="#d97706" stroke-width="1.6" marker-end="url(#arrA)"/>
+<rect x="40" y="1672" width="16" height="16" rx="4" fill="#334155" stroke="#334155" stroke-width="1.5"/>
+<text x="64" y="1684.2" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">Start / End</text>
+<rect x="167" y="1672" width="16" height="16" rx="4" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
+<text x="191" y="1684.2" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">Process</text>
+<rect x="266" y="1672" width="16" height="16" rx="4" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="290" y="1684.2" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">Input</text>
+<rect x="351" y="1672" width="16" height="16" rx="4" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="375" y="1684.2" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">Decision</text>
+<rect x="457" y="1672" width="16" height="16" rx="4" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+<text x="481" y="1684.2" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">Success</text>
+<rect x="556" y="1672" width="16" height="16" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="580" y="1684.2" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">Error</text>
+<rect x="641" y="1672" width="16" height="16" rx="4" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+<text x="665" y="1684.2" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">Warning</text>
+</svg>

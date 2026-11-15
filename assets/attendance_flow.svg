@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1010" width="1000" height="1010" role="img" aria-label="Flow chart of the Student Attendance Cleaner" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<title>Flow chart of the Student Attendance Cleaner</title>
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker><marker id="arrR" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker><marker id="arrA" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#d97706"/></marker></defs>
+<rect width="1000" height="1010" fill="#ffffff"/>
+<rect x="340.0" y="22.0" width="120" height="36" rx="18.0" fill="#334155" stroke="#334155" stroke-width="1.6"/>
+<text x="400" y="44.5" font-size="13" fill="#ffffff" font-weight="normal" text-anchor="middle">Start</text>
+<rect x="230.0" y="88.0" width="340" height="48" rx="8" fill="#f1f5f9" stroke="#64748b" stroke-width="1.6"/>
+<text x="400" y="108.2" font-size="13" fill="#0f172a" font-weight="normal" text-anchor="middle">read_lines()</text>
+<text x="400" y="124.9" font-size="13" fill="#0f172a" font-weight="normal" text-anchor="middle">open attendance.txt (utf-8)</text>
+<polyline points="400,58.0 400,88.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<polygon points="400,165.0 510.0,205 400,245.0 290.0,205" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.6"/>
+<text x="400" y="209.6" font-size="13" fill="#4c1d95" font-weight="normal" text-anchor="middle">File found?</text>
+<polyline points="400,136.0 400,165.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="645.0" y="177.0" width="270" height="56" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+<text x="780" y="201.2" font-size="13" fill="#7f1d1d" font-weight="normal" text-anchor="middle">FileNotFoundError caught:</text>
+<text x="780" y="217.9" font-size="13" fill="#7f1d1d" font-weight="normal" text-anchor="middle">print a helpful message</text>
+<polyline points="510.0,205 645.0,205" fill="none" stroke="#dc2626" stroke-width="1.6" marker-end="url(#arrR)"/>
+<rect x="567.04" y="188.0" width="21.919999999999998" height="16.799999999999997" fill="#ffffff"/>
+<text x="578" y="201.2" font-size="12" fill="#7f1d1d" font-weight="bold" text-anchor="middle">No</text>
+<rect x="695.0" y="292.0" width="170" height="36" rx="18.0" fill="#334155" stroke="#334155" stroke-width="1.6"/>
+<text x="780" y="314.6" font-size="13" fill="#ffffff" font-weight="normal" text-anchor="middle">End (exit code 1)</text>
+<polyline points="780,233.0 780,292" fill="none" stroke="#dc2626" stroke-width="1.6" marker-end="url(#arrR)"/>
+<polygon points="244.0,268.0 570.0,268.0 556.0,312.0 230.0,312.0" fill="#dbeafe" stroke="#2563eb" stroke-width="1.6"/>
+<text x="400" y="294.6" font-size="13" fill="#1e3a8a" font-weight="normal" text-anchor="middle">Read every line (splitlines)</text>
+<polyline points="400,245.0 400,268.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="405.56" y="247.0" width="28.88" height="16.799999999999997" fill="#ffffff"/>
+<text x="420" y="260.2" font-size="12" fill="#334155" font-weight="bold" text-anchor="middle">Yes</text>
+<rect x="230.0" y="343.0" width="340" height="44" rx="8" fill="#f1f5f9" stroke="#64748b" stroke-width="1.6"/>
+<text x="400" y="369.6" font-size="13" fill="#0f172a" font-weight="normal" text-anchor="middle">Count the original input lines</text>
+<polyline points="400,312.0 400,343.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="230.0" y="418.0" width="340" height="64" rx="8" fill="#f1f5f9" stroke="#64748b" stroke-width="1.6"/>
+<text x="400" y="437.9" font-size="13" fill="#0f172a" font-weight="normal" text-anchor="middle">clean_names(): list comprehension</text>
+<text x="400" y="454.6" font-size="13" fill="#0f172a" font-weight="normal" text-anchor="middle">strip → split → join → title()</text>
+<text x="400" y="471.2" font-size="13" fill="#0f172a" font-weight="normal" text-anchor="middle">blank lines are skipped</text>
+<polyline points="400,387.0 400,418.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="230.0" y="521.0" width="340" height="48" rx="8" fill="#f1f5f9" stroke="#64748b" stroke-width="1.6"/>
+<text x="400" y="541.2" font-size="13" fill="#0f172a" font-weight="normal" text-anchor="middle">sorted(set(cleaned_names))</text>
+<text x="400" y="557.9" font-size="13" fill="#0f172a" font-weight="normal" text-anchor="middle">duplicates removed, A to Z</text>
+<polyline points="400,482.0 400,521.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<polygon points="400,602.0 520.0,640 400,678.0 280.0,640" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.6"/>
+<text x="400" y="644.5" font-size="13" fill="#4c1d95" font-weight="normal" text-anchor="middle">Any names left?</text>
+<polyline points="400,569.0 400,602.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="645.0" y="612.0" width="270" height="56" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+<text x="780" y="636.2" font-size="13" fill="#78350f" font-weight="normal" text-anchor="middle">Warning: no student names</text>
+<text x="780" y="652.9" font-size="13" fill="#78350f" font-weight="normal" text-anchor="middle">found (CSV gets header only)</text>
+<polyline points="520.0,640 645.0,640" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="574.04" y="623.0" width="21.919999999999998" height="16.799999999999997" fill="#ffffff"/>
+<text x="585" y="636.2" font-size="12" fill="#334155" font-weight="bold" text-anchor="middle">No</text>
+<rect x="230.0" y="716.0" width="340" height="48" rx="8" fill="#f1f5f9" stroke="#64748b" stroke-width="1.6"/>
+<text x="400" y="736.2" font-size="13" fill="#0f172a" font-weight="normal" text-anchor="middle">write_clean_csv()</text>
+<text x="400" y="752.9" font-size="13" fill="#0f172a" font-weight="normal" text-anchor="middle">create or overwrite attendance_clean.csv</text>
+<polyline points="400,678.0 400,716.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="405.56" y="689.0" width="28.88" height="16.799999999999997" fill="#ffffff"/>
+<text x="420" y="702.2" font-size="12" fill="#334155" font-weight="bold" text-anchor="middle">Yes</text>
+<polyline points="780,668.0 780,740 570.0,740" fill="none" stroke="#d97706" stroke-width="1.6" marker-end="url(#arrA)"/>
+<rect x="210.0" y="803.0" width="380" height="64" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="1.6"/>
+<text x="400" y="822.9" font-size="13" fill="#14532d" font-weight="normal" text-anchor="middle">Print: original line count, unique count,</text>
+<text x="400" y="839.5" font-size="13" fill="#14532d" font-weight="normal" text-anchor="middle">the numbered cleaned list</text>
+<text x="400" y="856.2" font-size="13" fill="#14532d" font-weight="normal" text-anchor="middle">and where the CSV was saved</text>
+<polyline points="400,764.0 400,803.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="340.0" y="907.0" width="120" height="36" rx="18.0" fill="#334155" stroke="#334155" stroke-width="1.6"/>
+<text x="400" y="929.5" font-size="13" fill="#ffffff" font-weight="normal" text-anchor="middle">End</text>
+<polyline points="400,867.0 400,907.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="640" y="392" width="320" height="176" rx="10" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="6 4"/>
+<text x="660" y="418.9" font-size="14" fill="#0f172a" font-weight="bold" text-anchor="start">Example</text>
+<text x="660" y="438.2" font-size="13" fill="#0f172a" font-weight="normal" text-anchor="start" font-family="Consolas, Menlo, DejaVu Sans Mono, monospace">" ali raza "   →   Ali Raza</text>
+<text x="660" y="454.9" font-size="13" fill="#0f172a" font-weight="normal" text-anchor="start" font-family="Consolas, Menlo, DejaVu Sans Mono, monospace">"ALI RAZA"      →   Ali Raza</text>
+<text x="660" y="486.2" font-size="13" fill="#334155" font-weight="normal" text-anchor="start">set() keeps one Ali Raza, so the</text>
+<text x="660" y="502.9" font-size="13" fill="#334155" font-weight="normal" text-anchor="start">two lines count as one student.</text>
+<text x="660" y="539.5" font-size="13" fill="#334155" font-weight="normal" text-anchor="start">Blank and space-only lines are ignored.</text>
+<rect x="40" y="967" width="16" height="16" rx="4" fill="#334155" stroke="#334155" stroke-width="1.5"/>
+<text x="64" y="979.2" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">Start / End</text>
+<rect x="167" y="967" width="16" height="16" rx="4" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
+<text x="191" y="979.2" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">Process</text>
+<rect x="266" y="967" width="16" height="16" rx="4" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="290" y="979.2" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">Input</text>
+<rect x="351" y="967" width="16" height="16" rx="4" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="375" y="979.2" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">Decision</text>
+<rect x="457" y="967" width="16" height="16" rx="4" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+<text x="481" y="979.2" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">Success</text>
+<rect x="556" y="967" width="16" height="16" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="580" y="979.2" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">Error</text>
+<rect x="641" y="967" width="16" height="16" rx="4" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+<text x="665" y="979.2" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">Warning</text>
+</svg>
